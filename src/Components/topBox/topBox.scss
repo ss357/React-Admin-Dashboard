@@ -1,0 +1,68 @@
+@import "../../styles/variables.scss";
+
+.topBox {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  h1 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: $main-bg;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $soft-bg;
+    padding: 5px;
+  }
+
+  .list {
+padding: 5px;
+ 
+    .listItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3px;
+      .user {
+
+        display: flex;
+        gap: 10px;
+        img {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .usertexts {
+
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          .username {
+            font-size: 1rem;
+            font-weight: 500;
+          }
+
+          .email {
+            color: $soft-color;
+          }
+        }
+      }
+
+      .amount {
+        color: rgb(160, 208, 236);
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+.list {
+    .listItem:hover{
+        background: $soft-bg;
+        border-radius: 16px;
+        transform: scale(.95);
+    }
+}
+
+

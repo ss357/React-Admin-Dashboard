@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+.home{
+    height: 85vh;
+   display: grid; 
+   gap: 15px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: repeat(auto-fill, minmax(140px, 1fr));
+   position: relative;
+   
+
+}
+
+.box{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid $soft-bg;
+    min-height: 115px;
+    position: relative;
+   
+}
+
+.box1{
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+.box4{
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+.box7{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.box:hover{
+    transform: scale(1.01);
+}
+
+

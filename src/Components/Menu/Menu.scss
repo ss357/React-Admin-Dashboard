@@ -1,0 +1,39 @@
+
+@import '../../styles/variables.scss';
+
+
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 12px;
+    font-weight: 200;
+    color: $soft-color;
+}
+
+.listItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 23px;
+    transition: 0.2s;
+}
+
+.listItem:hover{
+    background-color: $soft-bg;
+    transform: scale(1.05);
+}
+
+.menu{
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 200px;
+}

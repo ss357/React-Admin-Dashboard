@@ -1,0 +1,16 @@
+.barChartBox{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    h1{
+        height: 5%;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .chart{
+        height: 90%;
+        width: 100%;
+    }
+}
